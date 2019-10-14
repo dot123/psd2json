@@ -1,0 +1,30 @@
+{
+  "name": "psd2json",
+  "version": "1.0.0",
+  "description": "Convert PSD to JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dot123/psd2json.git"
+  },
+  "keywords": [
+    "psd",
+    "json"
+  ],
+  "author": "conjurer888888@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dot123/psd2json/issues"
+  },
+  "homepage": "https://github.com/dot123/psd2json#readme",
+  "dependencies": {
+    "commander": "^3.0.2",
+    "js-pinyin": "^0.1.9",
+    "mkdirp": "^0.5.1",
+    "psd": "^3.2.0",
+    "rimraf": "^3.0.0"
+  }
+}

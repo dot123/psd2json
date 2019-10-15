@@ -1,2 +1,2 @@
-node ./test/index.js -i ./test -o ./test/output -f sample
+node ./test/index.js -i ./test/input -o ./test/output
 pause

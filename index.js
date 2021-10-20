@@ -1,3 +1,11 @@
+/*
+ * @Author: conjurer
+ * @Github: https://github.com/dot123
+ * @Date: 2019-10-15 14:34:14
+ * @LastEditors: conjurer
+ * @LastEditTime: 2019-10-15 15:56:49
+ * @Description:
+ */
 const fs = require("fs");
 const path = require("path");
 const psd = require("psd");
@@ -43,7 +51,7 @@ function psd2json(psdFile, options = {}) {
     queueNodesIndex.push(0);
     queueNodesName.push(undefined);
     const psdStructure = {
-        group: []
+        group: [],
     };
     queueNodesStructure.push(psdStructure);
 
@@ -71,7 +79,7 @@ function psd2json(psdFile, options = {}) {
                 queueNodesName.push(nodesName + node.name);
                 const structure = {
                     name: pinyin.getFullChars(node.name),
-                    group: []
+                    group: [],
                 };
                 nodesStructure.group.push(structure);
                 queueNodesStructure.push(structure);
@@ -87,7 +95,7 @@ function psd2json(psdFile, options = {}) {
                     x: node.layer.left,
                     y: node.layer.top,
                     width: node.layer.width,
-                    height: node.layer.height
+                    height: node.layer.height,
                 };
                 nodesStructure.group.push(structure);
             }
